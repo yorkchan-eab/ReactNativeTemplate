@@ -4,7 +4,7 @@ import { createLogger } from 'redux-logger'
 import { persistStore } from 'redux-persist'
 import rootReducer from '../reducers'
 import rootSaga from '../sagas'
-import { TAppState } from '../models';
+import { TAppState } from '../../models';
 import { hideLoading } from '../actions';
 
 

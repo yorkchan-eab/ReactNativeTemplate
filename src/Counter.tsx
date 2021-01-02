@@ -3,7 +3,7 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 // redux
 import { Dispatch, Action } from 'redux';
 import { connect } from 'react-redux'
-import { ActionBase, TAppState } from './redux/models';
+import { ActionBase, TAppState } from './models';
 import { counterAsyncPlus, counterPlus } from './redux/actions';
 import { trans } from './i18n/i18n';
 // 

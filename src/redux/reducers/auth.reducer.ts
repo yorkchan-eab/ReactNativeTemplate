@@ -1,5 +1,5 @@
 
-import { TAuthState, ActionBase, } from "../models";
+import { TAuthState, ActionBase, } from "../../models";
 import { LOGIN_DONE, LOGOUT_DONE } from "../actions";
 
 

@@ -6,7 +6,7 @@ import {
     LOGOUT,
     LOGOUT_DONE,
 } from '../actions';
-import { TAppState, TAuthState } from '../models';
+import { TAppState, TAuthState } from '../../models';
 
 
 export const getAuth = (state: TAppState) => state.auth;

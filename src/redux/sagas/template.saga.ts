@@ -4,7 +4,7 @@ import {
     COUNTER_ASYNC_PLUS_DONE,
     CounterAsyncPlus
 } from '../actions';
-import { TAppState, TTemplateState } from '../models';
+import { TAppState, TTemplateState } from '../../models';
 import { secure, safe } from './base';
 
 async function simulateAsyncTask(duration: number) {

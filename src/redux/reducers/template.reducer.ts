@@ -1,5 +1,5 @@
 
-import { ActionBase, TTemplateState } from "../models";
+import { ActionBase, TTemplateState } from "../../models";
 import {
     COUNTER_PLUS,
     COUNTER_ASYNC_PLUS_DONE,
