@@ -6,6 +6,8 @@ import { SHOW_LOADING, HIDE_LOADING, COUNTER_ASYNC_PLUS, COUNTER_ASYNC_PLUS_DONE
 import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
 import auth from "./auth.reducer";
 import template from "./template.reducer";
+//@ts-ignore
+import immutableTransform from 'redux-persist-transform-immutable'
 
 const loading = (state = false, action: ActionBase) => {
     switch (action.type) {
@@ -29,5 +31,6 @@ const rootReducer = combineReducers<TAppState>({
 // export default rootReducer;
 export default persistReducer({
     key: 'root',
-    storage:AsyncStorage,
+    storage: AsyncStorage,
+    transforms: [immutableTransform()],
 }, rootReducer)

@@ -1,3 +1,4 @@
+import { Record } from 'immutable';
 import { AnyAction } from 'redux';
 export * from './auth.model'
 export * from './template.model'
@@ -12,4 +13,3 @@ export type TAppState = {
   auth: TAuthState,
   template: TTemplateState
 }
-

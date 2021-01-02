@@ -1,19 +1,17 @@
 
+import { Record } from "immutable";
 import { TAuthState, ActionBase, } from "../../models";
 import { LOGIN_DONE, LOGOUT_DONE } from "../actions";
 
-
-export default (state: TAuthState, action: ActionBase): TAuthState => {
-    if (!state) {
-        state = {
-            userId: null
-        }
-    }
+const initialState: TAuthState = new (Record({
+    userId: null,
+}))()
+export default (state = initialState, action: ActionBase): TAuthState => {
     switch (action.type) {
         case LOGIN_DONE:
-            return { ...state };
+            return state;
         case LOGOUT_DONE:
-            return { ...state };
+            return state;
         default:
             return state;
     }

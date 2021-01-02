@@ -9,7 +9,7 @@ import { trans } from './i18n/i18n';
 // 
 
 const mapStateToProps = (state: TAppState, ownProps: OwnProps): StateProps => {
-    const { counter } = state.template;
+    const { counter } = state.template.toJS();
     return {
         counter
     };
